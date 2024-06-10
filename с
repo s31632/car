@@ -1,0 +1,15 @@
+public class car extends Transport {
+    private double distanceTravelled;
+    private double fuelUsed;
+
+    public Automobile(String brand, String type, int manufactureYear, double distanceTravelled, double fuelUsed) {
+        super(brand, type, manufactureYear);
+        this.distanceTravelled = distanceTravelled;
+        this.fuelUsed = fuelUsed;
+    }
+
+    @Override
+    public double computeEfficiency() {
+        return distanceTravelled / fuelUsed;
+    }
+}
